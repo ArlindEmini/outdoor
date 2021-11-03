@@ -1,5 +1,7 @@
 import React from "react";
 
+import Section from "../section/Section";
+
 import logoWhite from "../../assets/logo-white.png";
 
 import AOS from "aos";
@@ -26,9 +28,13 @@ export const Head = () => {
               is where life happens
             </span>
           </h1>
-          <button className="button btn-white">Discover our Tours</button>
+          <div data-aos="fade-up" duration="4000">
+            <button className="button btn-white">Discover our Tours</button>
+          </div>
         </div>
       </div>
+
+      <Section />
     </div>
   );
 };
